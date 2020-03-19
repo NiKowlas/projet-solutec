@@ -1,9 +1,15 @@
 <template>
   <div>
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><router-link to="/">Home</router-link></li>
+      <li v-if="!isAuthenticated" style="float:right">
+                <router-link to="/login" class="active"
+                >
+                  Login
+                </router-link>
+      </li>
       <li><a href="#news">Toute les listes</a></li>
-      <li style="float:right"><a class="active" href="#about">Déconnexion</a></li>
+      <li v-if="isAuthenticated" style="float:right"><a class="active" href="#about">Déconnexion</a></li>
     </ul>
 </div>
 </template>

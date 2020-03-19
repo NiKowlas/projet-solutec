@@ -1,16 +1,26 @@
 <template>
   <div class="hello">
-
+      <list></list>
     
   </div>
 </template>
 
 <script>
+
+import List from '@/components/List'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    List
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      list: [{
+        name: 'Demo',
+        completed: true
+      }]
     }
   }
 }

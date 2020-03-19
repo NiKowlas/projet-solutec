@@ -10,6 +10,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.2",
     "vue": "^2.6.11",
     "vue-router": "^3.0.1"
   },
