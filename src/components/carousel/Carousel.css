@@ -1,0 +1,18 @@
+.carousel {
+    position: relative;
+}
+.carousel__nav{
+    position: absolute;
+    top: 50%;
+    margin: 60px;
+    left: 10px;
+    background-image: url(prev.png);
+    width: 120px;
+    height: 120px; 
+}
+
+.carousel__nav.carousel__next{
+    right: 10px;
+    left: auto;
+    background-image: url(next.png);
+}

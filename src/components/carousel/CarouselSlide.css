@@ -1,0 +1,82 @@
+.slide-right-enter-active{
+    animation: slideRightIn .8s;
+}
+.slide-right-leave-active{
+    animation: slideRightOut .8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+@keyframes slideRightIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform : translateX(0);
+    }
+}
+
+@keyframes slideRightOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform : translateX(-100%);
+    }
+}
+
+.slide-left-enter-active{
+    animation: slideLeftIn .8s;
+}
+.slide-left-leave-active{
+    animation: slideLeftOut .8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+@keyframes slideLeftIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform : translateX(0);
+    }
+}
+
+@keyframes slideLeftOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform : translateX(100%);
+    }
+}
+
+.carousel__pagination {
+    position: absolute;
+    text-align:center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel__pagination button {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    opacity: 0.8;
+    border-radius: 18px; 
+    margin: 3px
+}
+
+.carousel__pagination button.active {
+    background-color: #fff;
+    overflow: hidden;
+}
