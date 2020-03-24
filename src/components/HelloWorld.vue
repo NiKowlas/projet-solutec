@@ -5,9 +5,9 @@
           <img :src="'https://picsum.photos/1280/720/?'+n" width="100%">
         </carousel-slide>
       </carousel>
-    <!-- <button @click="addSlide">Ajouter un Slide</button>
+    <button @click="addSlide">Ajouter un Slide</button>
     <button @click="removeSlide">Supprimer un Slide</button>
-   -->
+  
   <list></list>
   </div>
 </template>
